@@ -1,0 +1,30 @@
+<!-- 
+Author: Ishaan Ghosh
+File: index.html
+Course: CSc 337 Fall 21
+Desc: This is the HTML file for the homepage for project 8. It contains an upper div that holds the
+	  messages that have been sent. The bottom section is an input section, it utilizes text inputs
+	  and a button that submits the user input message to the server.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8"/>
+        <title>Chatty</title>
+        <link id="cssFile" rel="stylesheet" type="text/css" href="/index.css">
+		<script src="index.js"></script>
+	</head>
+
+	<body>
+		<div id="chatDiv"></div>
+		<div id="messageDiv">
+			<label for="alias" id="aliasLabel">Alias</label>
+            <input type="text" id="alias" name="Alias"><br><br>   
+			<label for="mes" id="mesLabel">Message</label>
+            <input type="text" id="mes" name="Message"><br><br>  
+			<button type="button" id="submit" onclick="sendMes()">Send Message</button>
+		</div>
+	</body>
+
+</html>
